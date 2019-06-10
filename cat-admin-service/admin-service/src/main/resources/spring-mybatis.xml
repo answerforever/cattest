@@ -38,14 +38,14 @@
         <property name="configLocation" value="classpath:mybatis-config.xml"/>
         <property name="plugins">
             <array>
-                <bean id="mybatisInterceptor" class="com.answercloud.demo.Interceptor.CatMybatisPlugin"/>
+                <bean id="mybatisInterceptor" class="com.answer.test.Interceptor.CatMybatisPlugin"/>
             </array>
         </property>
     </bean>
 
     <!-- mapper接口所在包名 -->
     <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
-        <property name="basePackage" value="com.answercloud.demo.mapper"/>
+        <property name="basePackage" value="com.answer.test.mapper"/>
         <property name="sqlSessionFactoryBeanName" value="sqlSessionFactory"/>
     </bean>
 </beans>
