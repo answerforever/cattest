@@ -1,0 +1,67 @@
+logging:
+  level:
+    #        tk.mybatis: DEBUG
+    com.answercloud.demo: DEBUG
+  config: classpath:logback.xml
+spring:
+  application:
+    name: answer-local
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: GMT+8
+    default-property-inclusion: non_null
+  cloud:
+    consul:
+      host: 172.19.151.237
+      port: 11001
+#  datasource:
+#    name: test
+#    url: jdbc:mysql://${MYSQL_HOST:172.19.151.237}:${MYSQL_PORT:11002}/ag_admin_v1?useUnicode=true&characterEncoding=UTF8
+#    username: root
+#    password: 123456
+#    # 使用druid数据源
+#    type: com.alibaba.druid.pool.DruidDataSource
+#    driver-class-name: com.mysql.jdbc.Driver
+#    filters: stat
+#    maxActive: 20
+#    initialSize: 1
+#    maxWait: 60000
+#    minIdle: 1
+#    timeBetweenEvictionRunsMillis: 60000
+#    minEvictableIdleTimeMillis: 300000
+#    validationQuery: select 'x'
+#    testWhileIdle: true
+#    testOnBorrow: false
+#    testOnReturn: false
+#    poolPreparedStatements: true
+#    maxOpenPreparedStatements: 20
+#  cloud:
+#    nacos:
+#      discovery:
+#        server-addr: 127.0.0.1:8848
+
+mybatis:
+  basepackage: com.answercloud.demo.mapper
+  xmlLocation: classpath:mapper/**/*.xml
+  mapper-locations: "classpath*:mapper/*.xml"
+
+
+
+
+server:
+  port: 11020
+
+
+## mysql
+url:
+  jdbc:mysql://172.19.151.237:11002/ag_admin_v1?useUnicode=true&characterEncoding=UTF8
+driver:
+  com.mysql.jdbc.Driver
+initialSize:
+  0
+maxActive:
+  50
+minIdle:
+  5
+maxWait:
+  6000

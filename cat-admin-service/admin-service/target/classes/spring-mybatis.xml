@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans.xsd
+           http://www.springframework.org/schema/context
+           http://www.springframework.org/schema/context/spring-context-4.2.xsd">
+
+    <context:property-placeholder location="classpath:application.yml" />
+
+    <bean id="dataSource" class="com.alibaba.druid.pool.DruidDataSource" init-method="init" destroy-method="close">
+        <property name="driverClassName" value="${driver}"/>
+        <property name="url" value="${url}"/>
+        <property name="username" value="root"/>
+        <property name="password" value="123456"/>
+        <property name="initialSize" value="0"/>
+        <property name="maxActive" value="50"/>
+        <property name="minIdle" value="5"/>
+        <property name="maxWait" value="6000"/>
+        <property name="filters" value="stat"/>
+        <property name="validationQuery" value="SELECT 1" />
+        <!-- 自动检测，并关闭无效连接 -->
+        <property name="testWhileIdle" value="true" />
+        <!-- 配置一个连接在池中最小生存的时间，单位是毫秒 -->
+        <property name="minEvictableIdleTimeMillis" value="60000" />
+        <!-- 配置间隔多久才进行一次检测，检测需要关闭的空闲连接，单位是毫秒 -->
+        <property name="timeBetweenEvictionRunsMillis" value="5000" />
+        <!-- 每次获取连接的时候，校验连接是否有效 -->
+        <property name="testOnBorrow" value="false" />
+        <property name="testOnReturn" value="false" />
+    </bean>
+
+    <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+        <property name="dataSource" ref="dataSource"/>
+        <!--mapping.xml 文件 -->
+        <property name="mapperLocations" value="classpath:mapper/*.xml"/>
+        <property name="configLocation" value="classpath:mybatis-config.xml"/>
+        <property name="plugins">
+            <array>
+                <bean id="mybatisInterceptor" class="com.answercloud.demo.Interceptor.CatMybatisPlugin"/>
+            </array>
+        </property>
+    </bean>
+
+    <!-- mapper接口所在包名 -->
+    <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
+        <property name="basePackage" value="com.answercloud.demo.mapper"/>
+        <property name="sqlSessionFactoryBeanName" value="sqlSessionFactory"/>
+    </bean>
+</beans>
