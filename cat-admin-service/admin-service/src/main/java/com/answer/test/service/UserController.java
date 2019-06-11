@@ -2,6 +2,7 @@ package com.answer.test.service;
 
 import com.answer.test.dto.FrontUser;
 import com.answer.test.manager.UserManager;
+import com.answer.test.services.UserService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -12,7 +13,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("user")
-public class UserController {
+public class UserController implements UserService {
 
     @Autowired
     private UserManager userManager;
@@ -28,7 +29,7 @@ public class UserController {
         try {
             frontUser = userManager.getUserById(id);
 
-            int value = 2 / 0;
+            //int value = 2 / 0;
         } catch (Exception ex) {
             LOGGER.error("getUserInfo出现错误", ex);
         }

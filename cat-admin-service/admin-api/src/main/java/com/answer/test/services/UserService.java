@@ -12,8 +12,12 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Api(value = "用户管理")
 @RequestMapping(value = "user")
 public interface UserService {
-    @ApiOperation(value = "查询用户", response = Integer.class)
-    @PostMapping(value = "getuserinfo")
+    @ApiOperation(value = "查询用户", response = FrontUser.class)
+    @PostMapping(value = "/front/info")
     FrontUser getUserInfo(Integer id);
+
+    @ApiOperation(value = "检查用户", response = Integer.class)
+    @PostMapping(value = "/font/check")
+    int checkError(Integer id);
 
 }

@@ -1,11 +1,11 @@
 logging:
   level:
     #        tk.mybatis: DEBUG
-    com.answercloud.demo: DEBUG
+    com.answer.test: DEBUG
   config: classpath:logback.xml
 spring:
   application:
-    name: answer-local
+    name: answer-sadmin
   jackson:
     date-format: yyyy-MM-dd HH:mm:ss
     time-zone: GMT+8
@@ -14,6 +14,14 @@ spring:
     consul:
       host: 172.19.151.237
       port: 11001
+      discovery:
+        service-name: answer-sadmin
+        prefer-ip-address: true
+        query-passing: true  #查询健康节点
+        tags: version=1.0
+        heartbeat:
+          enabled: true
+          ttlValue: 10  #心跳探测时间默认30s 改为10s
 #  datasource:
 #    name: test
 #    url: jdbc:mysql://${MYSQL_HOST:172.19.151.237}:${MYSQL_PORT:11002}/ag_admin_v1?useUnicode=true&characterEncoding=UTF8
@@ -41,7 +49,7 @@ spring:
 #        server-addr: 127.0.0.1:8848
 
 mybatis:
-  basepackage: com.answercloud.demo.mapper
+  basepackage: com.answer.test.mapper
   xmlLocation: classpath:mapper/**/*.xml
   mapper-locations: "classpath*:mapper/*.xml"
 
@@ -49,7 +57,7 @@ mybatis:
 
 
 server:
-  port: 11020
+  port: 11021
 
 
 ## mysql

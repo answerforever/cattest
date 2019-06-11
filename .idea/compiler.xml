@@ -7,6 +7,8 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="admin-service" />
+        <module name="auth-api" />
+        <module name="auth-service" />
         <module name="admin-api" />
       </profile>
     </annotationProcessing>
@@ -15,6 +17,9 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="admin-api" options="-parameters" />
       <module name="admin-service" options="-parameters" />
+      <module name="auth-api" options="-parameters" />
+      <module name="auth-service" options="-parameters" />
+      <module name="cat-auth-service" options="" />
     </option>
   </component>
 </project>

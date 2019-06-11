@@ -9,12 +9,11 @@ import org.springframework.context.annotation.ImportResource;
 
 @SpringBootApplication(scanBasePackages = {"com.answer.test"})
 @EnableDiscoveryClient
-@EnableFeignClients
 @ImportResource({"classpath:spring-mybatis.xml"})
+@EnableFeignClients
 @EnableSwagger2Doc
-//@MapperScan("com.answercloud.demo.mapper")
-public class AdminApplication {
+public class AuthApplication {
     public static void main(String[] args) {
-        SpringApplication.run(AdminApplication.class, args);
+        SpringApplication.run(AuthApplication.class, args);
     }
 }
