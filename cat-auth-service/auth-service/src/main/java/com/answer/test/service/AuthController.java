@@ -2,7 +2,10 @@ package com.answer.test.service;
 
 import com.answer.test.dto.AuthGroupUser;
 import com.answer.test.manager.AuthManager;
+import com.answer.test.request.Request;
+import com.answer.test.request.Response;
 import com.answer.test.services.AuthService;
+import org.aspectj.lang.annotation.Aspect;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -10,6 +13,7 @@ import org.springframework.cloud.client.ServiceInstance;
 import org.springframework.cloud.client.discovery.DiscoveryClient;
 import org.springframework.cloud.client.loadbalancer.LoadBalancerClient;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -27,9 +31,10 @@ public class AuthController implements AuthService {
     private DiscoveryClient discoveryClient;
 
     @PostMapping(value = "getauthinfo")
-    public AuthGroupUser getAuthGroupUser(Integer id) {
+    public Response<AuthGroupUser> getAuthGroupUser(@RequestBody Request<Integer> request) {
         AuthGroupUser authGroupUser = null;
 
+        Integer id =request.getModel();
         LOGGER.info("getAuthGroupUser入参:" + id);
 
         try {
@@ -40,8 +45,9 @@ public class AuthController implements AuthService {
         }
 
         LOGGER.info("getAuthGroupUser结束:" + id);
-
-        return authGroupUser;
+        Response<AuthGroupUser> response=new Response<>();
+        response.setData(authGroupUser);
+        return response;
     }
 
     /**

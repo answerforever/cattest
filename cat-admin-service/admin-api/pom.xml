@@ -11,6 +11,17 @@
 
     <artifactId>admin-api</artifactId>
     <version>1.0-SNAPSHOT</version>
+
+    <dependencies>
+
+        <dependency>
+            <groupId>com.answer.test</groupId>
+            <artifactId>common-model</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+
+    </dependencies>
+
     <build>
         <plugins>
             <plugin>

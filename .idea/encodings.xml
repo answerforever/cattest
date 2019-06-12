@@ -8,5 +8,6 @@
     <file url="file://$PROJECT_DIR$/cat-auth-service" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cat-auth-service/auth-api" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cat-auth-service/auth-service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/common-model" charset="UTF-8" />
   </component>
 </project>

@@ -2,14 +2,13 @@ package com.answer.test.service;
 
 import com.answer.test.dto.FrontUser;
 import com.answer.test.manager.UserManager;
+import com.answer.test.request.Request;
+import com.answer.test.request.Response;
 import com.answer.test.services.UserService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("user")
@@ -20,9 +19,10 @@ public class UserController implements UserService {
 
     private static Logger LOGGER = LoggerFactory.getLogger(UserController.class);
 
-    @RequestMapping(value = "/front/info", method = RequestMethod.POST)
-    public FrontUser getUserInfo(Integer id) {
+    @PostMapping(value = "/front/info")
+    public Response<FrontUser> getUserInfo(@RequestBody Request<Integer> request) {
 
+        Integer id=request.getModel();
         LOGGER.info("getUserInfo开始，入参:" + id);
 
         FrontUser frontUser = null;
@@ -36,12 +36,15 @@ public class UserController implements UserService {
 
         LOGGER.info("getUserInfo返回参数：" + id);
 
-        return frontUser;
+        Response<FrontUser> response=new Response<>();
+        response.setData(frontUser);
+        return response;
     }
 
     @PostMapping(value = "/font/check")
-    public int checkError(Integer id) {
+    public Response<Integer> checkError(@RequestBody Request<Integer> request) {
         int result = 0;
+        Integer id=request.getModel();
         LOGGER.info("check开始,入参：" + id);
         try {
             FrontUser frontUser = null;
@@ -49,6 +52,8 @@ public class UserController implements UserService {
         } catch (Exception ex) {
             LOGGER.error("check出现错误", ex);
         }
-        return result;
+        Response<Integer> response=new Response<>();
+        response.setData(result);
+        return response;
     }
 }

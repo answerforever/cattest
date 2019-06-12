@@ -18,6 +18,7 @@
     <modules>
         <module>cat-admin-service</module>
         <module>cat-auth-service</module>
+        <module>common-model</module>
     </modules>
 
     <properties>
