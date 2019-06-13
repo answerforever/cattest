@@ -1,4 +1,4 @@
-package com.answer.test.config;
+package com.answer.test.request;
 
 import com.dianping.cat.servlet.CatFilter;
 import org.springframework.boot.web.servlet.FilterRegistrationBean;

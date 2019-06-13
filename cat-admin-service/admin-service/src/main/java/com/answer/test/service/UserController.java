@@ -5,6 +5,7 @@ import com.answer.test.manager.UserManager;
 import com.answer.test.request.Request;
 import com.answer.test.request.Response;
 import com.answer.test.services.UserService;
+import com.dianping.cat.Cat;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -51,6 +52,7 @@ public class UserController implements UserService {
             frontUser.setId(id);
         } catch (Exception ex) {
             LOGGER.error("check出现错误", ex);
+            Cat.logEvent("SERVICE_ERROR","check出现错误");
         }
         Response<Integer> response=new Response<>();
         response.setData(result);

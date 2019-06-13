@@ -1,37 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b6b92672-7fc2-4416-b60f-4725cfcbb370" name="Default Changelist" comment="tijiao">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cat-admin-service/admin-service/src/main/java/com/answer/test/aop/CatMsgIdAspectBean.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cat-admin-service/admin-service/src/main/java/com/answer/test/filter/HttpCatCrossFliter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cat-auth-service/auth-service/src/main/java/com/answer/test/Interceptor/FeignInterceptor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cat-auth-service/auth-service/src/main/java/com/answer/test/aspect/CatMsgIdAspectBean.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cat-auth-service/auth-service/src/main/java/com/answer/test/constants/CatMsgConstants.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cat-auth-service/auth-service/src/main/java/com/answer/test/filter/HttpCatCrossFliter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common-model/common-model.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common-model/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common-model/src/main/java/com/answer/test/request/MyCatContext.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common-model/src/main/java/com/answer/test/request/RPCContext.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common-model/src/main/java/com/answer/test/request/Request.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common-model/src/main/java/com/answer/test/request/RequestHeaderContext.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common-model/src/main/java/com/answer/test/request/Response.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common-model/src/main/java/com/answer/test/request/ResponseHeader.java" afterDir="false" />
+    <list default="true" id="b6b92672-7fc2-4416-b60f-4725cfcbb370" name="Default Changelist" comment="链路代码提交">
+      <change afterPath="$PROJECT_DIR$/common-model/src/main/java/com/answer/test/request/MyCatType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common-model/src/main/java/com/answer/test/request/Service3RdContext.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common-model/src/main/java/feign/MyFeignClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common-model/src/main/java/feign/MyFeignClientsConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common-model/src/main/java/feign/MyFeignConfigure.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common-model/src/main/java/feign/MyInvocationHandlerFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common-model/src/main/java/feign/MyReflectiveFeign.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cat-admin-service/admin-api/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cat-admin-service/admin-api/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cat-admin-service/admin-api/src/main/java/com/answer/test/services/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/cat-admin-service/admin-api/src/main/java/com/answer/test/services/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cat-admin-service/admin-api/target/classes/com/answer/test/services/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/cat-admin-service/admin-api/target/classes/com/answer/test/services/UserService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cat-admin-service/admin-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cat-admin-service/admin-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cat-admin-service/admin-service/src/main/java/com/answer/test/config/CatFilterConfigure.java" beforeDir="false" afterPath="$PROJECT_DIR$/common-model/src/main/java/com/answer/test/request/CatFilterConfigure.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cat-admin-service/admin-service/src/main/java/com/answer/test/service/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/cat-admin-service/admin-service/src/main/java/com/answer/test/service/UserController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cat-admin-service/admin-service/target/classes/com/answer/test/service/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/cat-admin-service/admin-service/target/classes/com/answer/test/service/UserController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cat-auth-service/auth-api/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cat-auth-service/auth-api/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cat-auth-service/auth-api/src/main/java/com/answer/test/services/AuthService.java" beforeDir="false" afterPath="$PROJECT_DIR$/cat-auth-service/auth-api/src/main/java/com/answer/test/services/AuthService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cat-auth-service/auth-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cat-auth-service/auth-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cat-auth-service/auth-service/src/main/java/com/answer/test/manager/AuthManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/cat-auth-service/auth-service/src/main/java/com/answer/test/manager/AuthManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cat-auth-service/auth-service/src/main/java/com/answer/test/service/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/cat-auth-service/auth-service/src/main/java/com/answer/test/service/AuthController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cat-auth-service/auth-service/src/main/java/com/answer/test/AuthApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/cat-auth-service/auth-service/src/main/java/com/answer/test/AuthApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cat-auth-service/auth-service/src/main/java/com/answer/test/Interceptor/FeignInterceptor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cat-auth-service/auth-service/src/main/java/com/answer/test/aspect/CatMsgIdAspectBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/cat-auth-service/auth-service/src/main/java/com/answer/test/aspect/CatMsgIdAspectBean.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cat-auth-service/auth-service/src/main/java/com/answer/test/config/CatFilterConfigure.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common-model/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/common-model/pom.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -52,85 +39,18 @@
   <component name="DefaultGradleProjectSettings">
     <option name="isMigrated" value="true" />
   </component>
+  <component name="FavoritesManager">
+    <favorites_list name="cattest" />
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/cat-auth-service/auth-service/src/main/java/com/answer/test/aspect/CatMsgIdAspectBean.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="53">
-              <caret line="85" column="72" selection-start-line="85" selection-start-column="72" selection-end-line="85" selection-end-column="72" />
+            <state relative-caret-position="-8">
+              <caret line="86" column="29" selection-start-line="86" selection-start-column="19" selection-end-line="86" selection-end-column="29" />
               <folding>
                 <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://C:/Program Files/Java/jdk1.8.0_202/src.zip!/java/lang/String.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="110" column="19" selection-start-line="110" selection-start-column="19" selection-end-line="110" selection-end-column="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cat-auth-service/auth-api/src/main/java/com/answer/test/services/AuthService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="304">
-              <caret line="17" column="9" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/common-model/src/main/java/com/answer/test/request/Response.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="133">
-              <caret line="8" column="5" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cat-admin-service/admin-api/src/main/java/com/answer/test/services/UserService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="324">
-              <caret line="23" column="20" selection-start-line="23" selection-start-column="20" selection-end-line="23" selection-end-column="20" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cat-admin-service/admin-service/src/main/java/com/answer/test/service/UserController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="412">
-              <caret line="56" column="24" selection-start-line="56" selection-start-column="24" selection-end-line="56" selection-end-column="24" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/common-model/src/main/java/com/answer/test/request/Request.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="95">
-              <caret line="8" selection-start-line="8" selection-end-line="8" selection-end-column="55" />
-              <folding>
-                <element signature="e#5456#5457#0" expanded="true" />
-                <element signature="e#5499#5500#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -139,8 +59,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/cat-auth-service/auth-service/src/main/java/com/answer/test/service/AuthController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="233">
-              <caret line="40" column="46" selection-start-line="40" selection-start-column="46" selection-end-line="40" selection-end-column="46" />
+            <state relative-caret-position="-8">
+              <caret line="40" selection-start-line="40" selection-end-line="40" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -149,10 +69,76 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cat-auth-service/auth-service/src/main/java/com/answer/test/manager/AuthManager.java">
+        <entry file="file://$PROJECT_DIR$/common-model/src/main/java/com/answer/test/request/CatFilterConfigure.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="203">
-              <caret line="26" column="48" selection-start-line="26" selection-start-column="48" selection-end-line="26" selection-end-column="48" />
+            <state relative-caret-position="-8">
+              <caret line="13" column="39" selection-start-line="13" selection-start-column="39" selection-end-line="13" selection-end-column="39" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/common-model/src/main/java/feign/MyReflectiveFeign.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-8">
+              <caret line="116" column="24" selection-start-line="116" selection-start-column="16" selection-end-line="116" selection-end-column="24" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="method#equals#0;class#FeignInvocationHandler#0;class#MyReflectiveFeign#0" />
+                <element signature="class#ParseHandlersByName#0;class#MyReflectiveFeign#0" />
+                <element signature="class#BuildTemplateByResolvingArgs#0;class#MyReflectiveFeign#0" />
+                <element signature="class#BuildFormEncodedTemplateFromArgs#0;class#MyReflectiveFeign#0" />
+                <element signature="class#BuildEncodedTemplateFromArgs#0;class#MyReflectiveFeign#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cat-auth-service/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-8">
+              <caret line="18" selection-start-line="18" selection-end-line="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cat-auth-service/auth-service/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-8">
+              <caret line="33" column="8" selection-start-line="33" selection-start-column="8" selection-end-line="37" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/common-model/src/main/java/com/answer/test/request/RequestHeaderContext.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-8">
+              <caret line="7" column="33" selection-start-line="7" selection-start-column="33" selection-end-line="7" selection-end-column="33" />
+              <folding>
+                <element signature="e#216#217#0" expanded="true" />
+                <element signature="e#265#266#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/io/github/openfeign/feign-core/9.5.1/feign-core-9.5.1.jar!/feign/InvocationHandlerFactory.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-17">
+              <caret line="25" column="15" selection-start-line="25" selection-start-column="15" selection-end-line="25" selection-end-column="15" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/cat-admin-service/admin-service/src/main/java/com/answer/test/service/UserController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="157">
+              <caret line="51" column="32" selection-start-line="51" selection-start-column="32" selection-end-line="51" selection-end-column="32" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -161,10 +147,15 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cat-auth-service/auth-service/src/main/java/com/answer/test/constants/CatMsgConstants.java">
+        <entry file="jar://$MAVEN_REPOSITORY$/com/dianping/cat/cat-client/3.0.0/cat-client-3.0.0-sources.jar!/com/dianping/cat/Cat.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="91">
-              <caret line="10" selection-start-line="10" selection-end-line="10" />
+            <state relative-caret-position="-8">
+              <caret line="294" column="23" selection-start-line="294" selection-start-column="23" selection-end-line="294" selection-end-column="23" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#10885#10886#0" expanded="true" />
+                <element signature="e#10927#10928#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -183,6 +174,7 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>logback.xml</find>
+      <find>spring-cloud-starter-openfeign</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -191,22 +183,12 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/cat-admin-service/pom.xml" />
-        <option value="$PROJECT_DIR$/cat-admin-service/admin-api/src/main/java/com/answer/test/dto/FrontUser.java" />
-        <option value="$PROJECT_DIR$/cat-admin-service/admin-service/src/main/java/com/answer/test/entity/User.java" />
-        <option value="$PROJECT_DIR$/cat-admin-service/admin-service/src/main/java/com/answer/test/mapper/UserMapper.java" />
-        <option value="$PROJECT_DIR$/cat-admin-service/admin-service/src/main/java/com/answer/test/manager/UserManager.java" />
-        <option value="$PROJECT_DIR$/cat-admin-service/admin-service/src/main/java/com/answer/test/Interceptor/CatMybatisPlugin.java" />
-        <option value="$PROJECT_DIR$/cat-admin-service/admin-service/src/main/resources/spring-mybatis.xml" />
-        <option value="$PROJECT_DIR$/cat-auth-service/auth-api/src/main/java/com/answer/test/dto/AuthGroupUser.java" />
-        <option value="$PROJECT_DIR$/cat-auth-service/auth-service/src/main/java/com/answer/test/mapper/AuthMapper.java" />
         <option value="$PROJECT_DIR$/cat-admin-service/admin-service/src/main/resources/mapper/UserMapper.xml" />
         <option value="$PROJECT_DIR$/cat-auth-service/auth-service/src/main/java/com/answer/test/entity/Auth.java" />
         <option value="$PROJECT_DIR$/cat-auth-service/auth-service/src/main/resources/mapper/AuthMapper.xml" />
         <option value="$PROJECT_DIR$/cat-auth-service/auth-service/src/main/resources/META-INF/app.properties" />
         <option value="$PROJECT_DIR$/cat-admin-service/admin-service/src/main/resources/META-INF/app.properties" />
         <option value="$PROJECT_DIR$/cat-admin-service/admin-service/src/main/resources/logback.xml" />
-        <option value="$PROJECT_DIR$/cat-auth-service/auth-service/src/main/java/com/answer/test/AuthApplication.java" />
         <option value="$PROJECT_DIR$/cat-auth-service/auth-service/src/main/resources/logback.xml" />
         <option value="$PROJECT_DIR$/cat-admin-service/admin-service/src/main/java/com/answer/test/AdminApplication.java" />
         <option value="$PROJECT_DIR$/cat-auth-service/pom.xml" />
@@ -223,21 +205,35 @@
         <option value="$PROJECT_DIR$/cat-admin-service/admin-service/src/main/java/com/answer/test/filter/HttpCatCrossFliter.java" />
         <option value="$PROJECT_DIR$/cat-auth-service/auth-service/src/main/java/com/answer/test/constants/CatMsgConstants.java" />
         <option value="$PROJECT_DIR$/cat-auth-service/auth-service/src/main/java/com/answer/test/filter/HttpCatCrossFliter.java" />
-        <option value="$PROJECT_DIR$/cat-auth-service/auth-service/src/main/java/com/answer/test/config/CatFilterConfigure.java" />
         <option value="$PROJECT_DIR$/cat-auth-service/auth-service/src/main/java/com/answer/test/Interceptor/FeignInterceptor.java" />
         <option value="$PROJECT_DIR$/common-model/src/main/java/com/answer/test/request/RequestHeaderContext.java" />
         <option value="$PROJECT_DIR$/common-model/src/main/java/com/answer/test/request/RPCContext.java" />
-        <option value="$PROJECT_DIR$/common-model/pom.xml" />
         <option value="$PROJECT_DIR$/cat-admin-service/admin-service/src/main/java/com/answer/test/aop/CatMsgIdAspectBean.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/common-model/src/main/java/com/answer/test/request/ResponseHeader.java" />
         <option value="$PROJECT_DIR$/cat-admin-service/admin-api/src/main/java/com/answer/test/services/UserService.java" />
         <option value="$PROJECT_DIR$/common-model/src/main/java/com/answer/test/request/Response.java" />
-        <option value="$PROJECT_DIR$/cat-admin-service/admin-service/src/main/java/com/answer/test/service/UserController.java" />
         <option value="$PROJECT_DIR$/cat-auth-service/auth-api/src/main/java/com/answer/test/services/AuthService.java" />
         <option value="$PROJECT_DIR$/cat-auth-service/auth-service/src/main/java/com/answer/test/service/AuthController.java" />
         <option value="$PROJECT_DIR$/cat-auth-service/auth-service/src/main/java/com/answer/test/manager/AuthManager.java" />
+        <option value="$PROJECT_DIR$/common-model/pom.xml" />
+        <option value="$PROJECT_DIR$/common-model/src/main/java/com/answer/test/request/feign/YqnFeignClient.java" />
+        <option value="$PROJECT_DIR$/common-model/src/main/java/com/answer/test/request/feign/MyFeignClient.java" />
+        <option value="$PROJECT_DIR$/common-model/src/main/java/com/answer/test/request/Service3RdContext.java" />
+        <option value="$PROJECT_DIR$/common-model/src/main/java/com/answer/test/request/YqnCatType.java" />
+        <option value="$PROJECT_DIR$/common-model/src/main/java/com/answer/test/request/MyCatType.java" />
+        <option value="$PROJECT_DIR$/common-model/src/main/java/feign/MyInvocationHandlerFactory.java" />
+        <option value="$PROJECT_DIR$/common-model/src/main/java/feign/MyFeignConfigure.java" />
+        <option value="$PROJECT_DIR$/common-model/src/main/java/feign/MyFeignClientsConfiguration.java" />
+        <option value="$PROJECT_DIR$/cat-auth-service/auth-service/src/main/java/feign/MyFeignClient.java" />
+        <option value="$PROJECT_DIR$/cat-auth-service/auth-service/src/main/java/com/answer/test/AuthApplication.java" />
+        <option value="$PROJECT_DIR$/cat-auth-service/auth-service/src/main/java/feign/MyReflectiveFeign.java" />
+        <option value="$PROJECT_DIR$/cat-auth-service/auth-service/src/main/java/com/answer/test/config/CatFilterConfigure.java" />
+        <option value="$PROJECT_DIR$/common-model/src/main/java/feign/MyFeignClient.java" />
         <option value="$PROJECT_DIR$/cat-auth-service/auth-service/src/main/java/com/answer/test/aspect/CatMsgIdAspectBean.java" />
+        <option value="$PROJECT_DIR$/common-model/src/main/java/feign/MyReflectiveFeign.java" />
+        <option value="$PROJECT_DIR$/common-model/src/main/java/com/answer/test/request/CatFilterConfigure.java" />
+        <option value="$PROJECT_DIR$/cat-admin-service/admin-service/src/main/java/com/answer/test/service/UserController.java" />
       </list>
     </option>
   </component>
@@ -259,21 +255,12 @@
       <expand>
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="admin-api" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="cat-auth-service" type="9519ce18:MavenProjectsStructure$ProjectNode" />
         </path>
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="admin-api" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-          <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
-        </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="common-model" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-        </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="common-model" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-          <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
+          <item name="cat-auth-service" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
         </path>
       </expand>
       <select />
@@ -294,6 +281,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -305,68 +294,6 @@
               <item name="cattest" type="b2602c69:ProjectViewProjectNode" />
               <item name="cattest" type="462c0819:PsiDirectoryNode" />
               <item name="cat-admin-service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cattest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cattest" type="462c0819:PsiDirectoryNode" />
-              <item name="cat-admin-service" type="462c0819:PsiDirectoryNode" />
-              <item name="admin-api" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cattest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cattest" type="462c0819:PsiDirectoryNode" />
-              <item name="cat-admin-service" type="462c0819:PsiDirectoryNode" />
-              <item name="admin-api" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cattest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cattest" type="462c0819:PsiDirectoryNode" />
-              <item name="cat-admin-service" type="462c0819:PsiDirectoryNode" />
-              <item name="admin-api" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cattest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cattest" type="462c0819:PsiDirectoryNode" />
-              <item name="cat-admin-service" type="462c0819:PsiDirectoryNode" />
-              <item name="admin-api" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cattest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cattest" type="462c0819:PsiDirectoryNode" />
-              <item name="cat-admin-service" type="462c0819:PsiDirectoryNode" />
-              <item name="admin-api" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cattest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cattest" type="462c0819:PsiDirectoryNode" />
-              <item name="cat-admin-service" type="462c0819:PsiDirectoryNode" />
-              <item name="admin-api" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="dto" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cattest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cattest" type="462c0819:PsiDirectoryNode" />
-              <item name="cat-admin-service" type="462c0819:PsiDirectoryNode" />
-              <item name="admin-api" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="services" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="cattest" type="b2602c69:ProjectViewProjectNode" />
@@ -418,17 +345,6 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="aop" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cattest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cattest" type="462c0819:PsiDirectoryNode" />
-              <item name="cat-admin-service" type="462c0819:PsiDirectoryNode" />
-              <item name="admin-service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="cattest" type="b2602c69:ProjectViewProjectNode" />
@@ -599,40 +515,7 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cattest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cattest" type="462c0819:PsiDirectoryNode" />
-              <item name="cat-auth-service" type="462c0819:PsiDirectoryNode" />
-              <item name="auth-service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="constants" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cattest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cattest" type="462c0819:PsiDirectoryNode" />
-              <item name="cat-auth-service" type="462c0819:PsiDirectoryNode" />
-              <item name="auth-service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="entity" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cattest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cattest" type="462c0819:PsiDirectoryNode" />
-              <item name="cat-auth-service" type="462c0819:PsiDirectoryNode" />
-              <item name="auth-service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="filter" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="cattest" type="b2602c69:ProjectViewProjectNode" />
@@ -665,17 +548,6 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="manager" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cattest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cattest" type="462c0819:PsiDirectoryNode" />
-              <item name="cat-auth-service" type="462c0819:PsiDirectoryNode" />
-              <item name="auth-service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="service" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -696,6 +568,16 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="mapper" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cattest" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cattest" type="462c0819:PsiDirectoryNode" />
+              <item name="cat-auth-service" type="462c0819:PsiDirectoryNode" />
+              <item name="auth-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="META-INF" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="cattest" type="b2602c69:ProjectViewProjectNode" />
@@ -732,12 +614,19 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="request" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="cattest" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cattest" type="462c0819:PsiDirectoryNode" />
+              <item name="common-model" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="feign" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -749,24 +638,25 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/cat-auth-service/auth-service/src/main/java" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.answer.test.request" />
+      <recent name="feign" />
+      <recent name="com.answer.test.request.feign" />
       <recent name="com.answer.test.aop" />
       <recent name="com.answer.test.aspect" />
-      <recent name="com.answer.test.config" />
-      <recent name="com.answer.test.service" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\GithubProjects\cattest\cat-auth-service\auth-service\src\main\java" />
       <recent name="D:\GithubProjects\cattest\cat-auth-service\auth-service\src\main\resources" />
       <recent name="D:\GithubProjects\cattest\cat-auth-service\auth-service\src\main\java\com\answer\test" />
       <recent name="D:\GithubProjects\cattest\cat-admin-service\admin-service\src\main\java\com\answer\test" />
@@ -791,7 +681,7 @@
     </option>
     <option name="contentProportion" value="0.22580644" />
   </component>
-  <component name="RunManager" selected="Spring Boot.AuthApplication">
+  <component name="RunManager" selected="Spring Boot.AdminApplication">
     <configuration name="AdminApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="admin-service" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.answer.test.AdminApplication" />
@@ -823,7 +713,8 @@
       <option name="presentableId" value="Default" />
       <updated>1560161734672</updated>
       <workItem from="1560161738068" duration="55149000" />
-      <workItem from="1560327332189" duration="5368000" />
+      <workItem from="1560327332189" duration="8249000" />
+      <workItem from="1560391697123" duration="14849000" />
     </task>
     <task id="LOCAL-00001" summary="tijiao">
       <created>1560165045778</created>
@@ -846,17 +737,24 @@
       <option name="project" value="LOCAL" />
       <updated>1560250464506</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="链路代码提交">
+      <created>1560333032074</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1560333032074</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="60517000" />
+    <option name="totallyTimeSpent" value="78247000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="653" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.283751" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.30962005" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -879,7 +777,7 @@
       <window_info anchor="bottom" id="Java Enterprise" order="12" />
       <window_info anchor="bottom" id="Database Changes" order="13" />
       <window_info anchor="bottom" id="Version Control" order="14" />
-      <window_info anchor="bottom" id="Run Dashboard" order="15" weight="0.59692895" />
+      <window_info anchor="bottom" id="Run Dashboard" order="15" weight="0.57389635" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -897,7 +795,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="tijiao" />
-    <option name="LAST_COMMIT_MESSAGE" value="tijiao" />
+    <MESSAGE value="链路代码提交" />
+    <option name="LAST_COMMIT_MESSAGE" value="链路代码提交" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -925,6 +824,66 @@
           <line>49</line>
           <properties />
           <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/cat-auth-service/auth-service/src/main/java/feign/MyFeignClientsConfiguration.java</url>
+          <line>24</line>
+          <properties />
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/cat-auth-service/auth-service/src/main/java/feign/MyFeignClientsConfiguration.java</url>
+          <line>26</line>
+          <properties />
+          <option name="timeStamp" value="20" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/cat-auth-service/auth-service/src/main/java/feign/MyFeignClientsConfiguration.java</url>
+          <line>16</line>
+          <properties />
+          <option name="timeStamp" value="21" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/cat-auth-service/auth-service/src/main/java/feign/MyInvocationHandlerFactory.java</url>
+          <line>9</line>
+          <properties />
+          <option name="timeStamp" value="22" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/cat-auth-service/auth-service/src/main/java/feign/MyReflectiveFeign.java</url>
+          <line>77</line>
+          <properties />
+          <option name="timeStamp" value="23" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/cat-auth-service/auth-service/src/main/java/com/answer/test/aspect/CatMsgIdAspectBean.java</url>
+          <line>76</line>
+          <properties />
+          <option name="timeStamp" value="24" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/common-model/src/main/java/feign/MyReflectiveFeign.java</url>
+          <line>77</line>
+          <properties />
+          <option name="timeStamp" value="26" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/common-model/src/main/java/feign/MyReflectiveFeign.java</url>
+          <line>112</line>
+          <properties />
+          <option name="timeStamp" value="27" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/cat-auth-service/auth-service/src/main/java/com/answer/test/aspect/CatMsgIdAspectBean.java</url>
+          <line>86</line>
+          <properties />
+          <option name="timeStamp" value="28" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/cat-auth-service/auth-service/src/main/java/com/answer/test/aspect/CatMsgIdAspectBean.java</url>
+          <line>88</line>
+          <properties />
+          <option name="timeStamp" value="30" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -956,319 +915,10 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/cloud/spring-cloud-netflix-ribbon/2.0.1.RELEASE/spring-cloud-netflix-ribbon-2.0.1.RELEASE.jar!/org/springframework/cloud/netflix/ribbon/RibbonLoadBalancerClient.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="50" selection-start-line="50" selection-end-line="50" />
-          <folding>
-            <element signature="e#4991#4992#0" expanded="true" />
-            <element signature="e#5061#5062#0" expanded="true" />
-            <element signature="e#5277#5278#0" expanded="true" />
-            <element signature="e#5345#5346#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cat-auth-service/auth-service/src/main/java/com/answer/test/AuthApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="10" column="22" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cat-auth-service/auth-api/src/main/java/com/answer/test/dto/AuthGroupUser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" column="23" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cat-admin-service/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="11" column="33" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cat-auth-service/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="18" selection-start-line="18" selection-end-line="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cat-auth-service/auth-service/src/main/java/com/answer/test/remote/UserRemote.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cat-auth-service/auth-service/src/main/resources/META-INF/app.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="15" selection-start-column="15" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cat-auth-service/auth-service/src/main/resources/mybatis-config.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cat-auth-service/auth-service/src/main/resources/spring-mybatis.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="19" column="47" selection-start-line="19" selection-start-column="47" selection-end-line="19" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cat-auth-service/auth-service/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="21" column="8" selection-start-line="21" selection-start-column="8" selection-end-line="25" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cat-auth-service/auth-api/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="14" column="4" selection-start-line="14" selection-start-column="4" selection-end-line="22" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cat-admin-service/admin-service/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="36" column="21" selection-start-line="36" selection-start-column="21" selection-end-line="36" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/5.0.8.RELEASE/spring-beans-5.0.8.RELEASE.jar!/org/springframework/beans/factory/support/SimpleInstantiationStrategy.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="113" selection-start-line="113" selection-end-line="113" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/tomcat/embed/tomcat-embed-core/8.5.32/tomcat-embed-core-8.5.32.jar!/javax/servlet/Filter.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot/2.0.4.RELEASE/spring-boot-2.0.4.RELEASE.jar!/org/springframework/boot/web/servlet/FilterRegistrationBean.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="7" selection-start-line="7" selection-end-line="7" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/5.0.8.RELEASE/spring-aop-5.0.8.RELEASE.jar!/org/springframework/aop/interceptor/ExposeInvocationInterceptor.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="89">
-          <caret line="40" selection-start-line="40" selection-end-line="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/5.0.8.RELEASE/spring-aop-5.0.8.RELEASE.jar!/org/springframework/aop/framework/CglibAopProxy.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="31">
-          <caret line="511" selection-start-line="511" selection-end-line="511" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/5.0.8.RELEASE/spring-aop-5.0.8.RELEASE.jar!/org/springframework/aop/aspectj/AbstractAspectJAdvice.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="442" column="16" lean-forward="true" selection-start-line="442" selection-start-column="16" selection-end-line="442" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/5.0.8.RELEASE/spring-aop-5.0.8.RELEASE.jar!/org/springframework/aop/framework/JdkDynamicAopProxy.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="121" selection-start-line="121" selection-end-line="121" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cat-auth-service/auth-service/src/main/java/com/answer/test/Interceptor/CatMybatisPlugin.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="35" column="13" selection-start-line="35" selection-start-column="13" selection-end-line="35" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cat-auth-service/auth-service/src/main/java/com/answer/test/Interceptor/FeignInterceptor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common-model/src/main/java/com/answer/test/request/RequestHeaderContext.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="11" column="39" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="39" />
-          <folding>
-            <element signature="e#270#271#0" expanded="true" />
-            <element signature="e#319#320#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cat-admin-service/admin-api/src/main/java/com/answer/test/dto/FrontUser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cat-auth-service/auth-service/src/main/java/com/answer/test/config/CatFilterConfigure.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="14" column="42" selection-start-line="14" selection-start-column="42" selection-end-line="14" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cat-auth-service/auth-service/src/main/java/com/answer/test/filter/HttpCatCrossFliter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cat-admin-service/admin-service/src/main/java/com/answer/test/Interceptor/CatMybatisPlugin.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="141">
-          <caret line="35" column="13" selection-start-line="35" selection-start-column="13" selection-end-line="35" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cat-admin-service/admin-service/src/main/java/com/answer/test/filter/HttpCatCrossFliter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cat-admin-service/admin-service/src/main/java/com/answer/test/config/CatFilterConfigure.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="12" column="17" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cat-admin-service/admin-api/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="24" column="4" selection-start-line="24" selection-start-column="4" selection-end-line="35" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common-model/src/main/java/com/answer/test/request/RPCContext.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="15" column="60" selection-start-line="15" selection-start-column="60" selection-end-line="15" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cat-admin-service/admin-service/src/main/java/com/answer/test/AdminApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="17" column="26" selection-start-line="17" selection-start-column="26" selection-end-line="17" selection-end-column="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#689#690#0" expanded="true" />
-            <element signature="e#756#757#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cat-admin-service/admin-service/src/main/resources/logback.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cat-auth-service/auth-service/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="627">
-          <caret line="33" column="18" selection-start-line="33" selection-start-column="18" selection-end-line="33" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cat-admin-service/admin-service/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="91">
-          <caret line="6" column="14" selection-start-line="6" selection-start-column="14" selection-end-line="6" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/dianping/cat/cat-client/3.0.0/cat-client-3.0.0-sources.jar!/com/dianping/cat/Cat.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="30" column="51" selection-start-line="30" selection-start-column="51" selection-end-line="30" selection-end-column="51" />
-          <folding>
-            <element signature="e#10885#10886#0" expanded="true" />
-            <element signature="e#10927#10928#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common-model/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="14" column="11" selection-start-line="14" selection-start-column="11" selection-end-line="14" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="43">
-          <caret line="13" column="38" selection-start-line="13" selection-start-column="38" selection-end-line="13" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_202/src.zip!/java/util/Map.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="111">
           <caret line="255" column="6" lean-forward="true" selection-start-line="255" selection-start-column="6" selection-end-line="255" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cat-admin-service/admin-service/src/main/java/com/answer/test/aop/CatMsgIdAspectBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="213">
-          <caret line="51" column="16" lean-forward="true" selection-start-line="51" selection-start-column="16" selection-end-line="51" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common-model/src/main/java/com/answer/test/request/MyCatContext.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="25" column="31" selection-start-line="25" selection-start-column="31" selection-end-line="25" selection-end-column="31" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#605#606#0" expanded="true" />
-            <element signature="e#638#639#0" expanded="true" />
-            <element signature="e#703#704#0" expanded="true" />
-            <element signature="e#747#748#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1282,41 +932,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/common-model/src/main/java/com/answer/test/request/Request.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="8" selection-start-line="8" selection-end-line="8" selection-end-column="55" />
-          <folding>
-            <element signature="e#5456#5457#0" expanded="true" />
-            <element signature="e#5499#5500#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/cat-admin-service/admin-api/src/main/java/com/answer/test/services/UserService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="324">
           <caret line="23" column="20" selection-start-line="23" selection-start-column="20" selection-end-line="23" selection-end-column="20" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common-model/src/main/java/com/answer/test/request/Response.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="8" column="5" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cat-admin-service/admin-service/src/main/java/com/answer/test/service/UserController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="412">
-          <caret line="56" column="24" selection-start-line="56" selection-start-column="24" selection-end-line="56" selection-end-column="24" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1333,44 +952,396 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cat-auth-service/auth-service/src/main/java/com/answer/test/service/AuthController.java">
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_202/src.zip!/java/lang/String.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="233">
-          <caret line="40" column="46" selection-start-line="40" selection-start-column="46" selection-end-line="40" selection-end-column="46" />
+        <state relative-caret-position="1425">
+          <caret line="110" column="19" selection-start-line="110" selection-start-column="19" selection-end-line="110" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cat-admin-service/admin-service/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="912">
+          <caret line="48" column="36" selection-start-line="48" selection-start-column="36" selection-end-line="48" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/io/github/openfeign/feign-core/9.5.1/feign-core-9.5.1.jar!/feign/Client.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="42" column="26" selection-start-line="42" selection-start-column="26" selection-end-line="42" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common-model/src/main/java/com/answer/test/request/Request.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="41" column="27" selection-start-line="41" selection-start-column="27" selection-end-line="41" selection-end-column="27" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#5456#5457#0" expanded="true" />
+            <element signature="e#5499#5500#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cat-auth-service/auth-service/src/main/java/com/answer/test/manager/AuthManager.java">
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_202/src.zip!/org/omg/CORBA/portable/ApplicationException.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="203">
-          <caret line="26" column="48" selection-start-line="26" selection-start-column="48" selection-end-line="26" selection-end-column="48" />
+        <state relative-caret-position="285">
+          <caret line="38" column="11" selection-start-line="38" selection-start-column="11" selection-end-line="38" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/5.0.8.RELEASE/spring-aop-5.0.8.RELEASE.jar!/org/springframework/aop/interceptor/ExposeInvocationInterceptor.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="355">
+          <caret line="43" selection-start-line="43" selection-end-line="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cat-admin-service/admin-service/src/main/java/com/answer/test/AdminApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="17" column="26" selection-start-line="17" selection-start-column="26" selection-end-line="17" selection-end-column="26" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#689#690#0" expanded="true" />
+            <element signature="e#756#757#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common-model/src/main/java/com/answer/test/request/MyCatContext.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="25" column="31" selection-start-line="25" selection-start-column="31" selection-end-line="25" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#605#606#0" expanded="true" />
+            <element signature="e#638#639#0" expanded="true" />
+            <element signature="e#703#704#0" expanded="true" />
+            <element signature="e#747#748#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/5.0.8.RELEASE/spring-aop-5.0.8.RELEASE.jar!/org/springframework/aop/framework/ReflectiveMethodInvocation.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="271">
+          <caret line="39" selection-start-line="39" selection-end-line="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cat-auth-service/auth-service/src/main/java/com/answer/test/remote/UserRemote.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common-model/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="20" column="19" selection-start-line="20" selection-start-column="19" selection-end-line="20" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/cloud/spring-cloud-openfeign-core/2.0.1.RELEASE/spring-cloud-openfeign-core-2.0.1.RELEASE.jar!/org/springframework/cloud/openfeign/EnableFeignClients.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="17" column="19" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/cloud/spring-cloud-openfeign-core/2.0.1.RELEASE/spring-cloud-openfeign-core-2.0.1.RELEASE.jar!/org/springframework/cloud/openfeign/FeignClientsRegistrar.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="73" lean-forward="true" selection-start-line="73" selection-end-line="73" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cat-auth-service/auth-service/src/main/java/feign/MyFeignClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-76">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cat-auth-service/auth-service/src/main/java/feign/MyFeignConfigure.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/5.0.8.RELEASE/spring-aop-5.0.8.RELEASE.jar!/org/springframework/aop/framework/JdkDynamicAopProxy.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="93">
+          <caret line="121" selection-start-line="121" selection-end-line="121" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cat-auth-service/auth-service/src/main/java/com/answer/test/AuthApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="9" column="69" selection-start-line="9" selection-start-column="69" selection-end-line="9" selection-end-column="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cat-auth-service/auth-service/src/main/java/com/answer/test/Interceptor/FeignInterceptor.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cat-auth-service/auth-service/src/main/java/com/answer/test/logappender/CatLogbackAppender.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-722">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cat-auth-service/auth-service/src/main/java/com/answer/test/Interceptor/CatMybatisPlugin.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="35" column="13" selection-start-line="35" selection-start-column="13" selection-end-line="35" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/cat-auth-service/auth-service/src/main/java/com/answer/test/constants/CatMsgConstants.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="91">
+        <state relative-caret-position="190">
           <caret line="10" selection-start-line="10" selection-end-line="10" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_202/src.zip!/java/lang/String.java">
+    <entry file="file://$PROJECT_DIR$/cat-auth-service/auth-service/src/main/java/com/answer/test/manager/AuthManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="110" column="19" selection-start-line="110" selection-start-column="19" selection-end-line="110" selection-end-column="19" />
+        <state relative-caret-position="130">
+          <caret line="30" selection-start-line="30" selection-end-line="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/io/github/openfeign/feign-core/9.5.1/feign-core-9.5.1.jar!/feign/Response.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="23" column="19" selection-start-line="23" selection-start-column="19" selection-end-line="23" selection-end-column="19" />
+          <folding>
+            <element signature="e#0#8747#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cat-auth-service/auth-service/src/main/java/feign/MyReflectiveFeign.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="126" selection-start-line="126" selection-end-line="126" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cat-auth-service/auth-service/src/main/java/feign/MyFeignClientsConfiguration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="179">
+          <caret line="26" selection-start-line="26" selection-end-line="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cat-auth-service/auth-service/src/main/java/feign/MyInvocationHandlerFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="9" column="78" selection-start-line="9" selection-start-column="78" selection-end-line="9" selection-end-column="78" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common-model/src/main/java/com/answer/test/request/MyCatType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="157">
+          <caret line="17" column="4" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common-model/src/main/java/com/answer/test/request/Service3RdContext.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="13" column="38" selection-start-line="13" selection-start-column="38" selection-end-line="13" selection-end-column="38" />
+          <folding>
+            <element signature="e#309#310#0" expanded="true" />
+            <element signature="e#352#353#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common-model/src/main/java/feign/MyFeignConfigure.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common-model/src/main/java/feign/MyFeignClientsConfiguration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" selection-end-column="14" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common-model/src/main/java/feign/MyFeignClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="186">
+          <caret line="33" column="48" lean-forward="true" selection-start-line="33" selection-start-column="48" selection-end-line="33" selection-end-column="48" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common-model/src/main/java/feign/MyInvocationHandlerFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="6" column="60" selection-start-line="6" selection-start-column="60" selection-end-line="6" selection-end-column="60" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cat-admin-service/admin-service/src/main/java/com/answer/test/aop/CatMsgIdAspectBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-247">
+          <caret line="34" column="37" selection-start-line="34" selection-start-column="37" selection-end-line="34" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common-model/src/main/java/com/answer/test/request/Response.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/io/github/openfeign/feign-core/9.5.1/feign-core-9.5.1.jar!/feign/InvocationHandlerFactory.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-17">
+          <caret line="25" column="15" selection-start-line="25" selection-start-column="15" selection-end-line="25" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cat-auth-service/auth-service/src/main/java/com/answer/test/service/AuthController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-8">
+          <caret line="40" selection-start-line="40" selection-end-line="40" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common-model/src/main/java/com/answer/test/request/RequestHeaderContext.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-8">
+          <caret line="7" column="33" selection-start-line="7" selection-start-column="33" selection-end-line="7" selection-end-column="33" />
+          <folding>
+            <element signature="e#216#217#0" expanded="true" />
+            <element signature="e#265#266#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common-model/src/main/java/feign/MyReflectiveFeign.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-8">
+          <caret line="116" column="24" selection-start-line="116" selection-start-column="16" selection-end-line="116" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#equals#0;class#FeignInvocationHandler#0;class#MyReflectiveFeign#0" />
+            <element signature="class#ParseHandlersByName#0;class#MyReflectiveFeign#0" />
+            <element signature="class#BuildTemplateByResolvingArgs#0;class#MyReflectiveFeign#0" />
+            <element signature="class#BuildFormEncodedTemplateFromArgs#0;class#MyReflectiveFeign#0" />
+            <element signature="class#BuildEncodedTemplateFromArgs#0;class#MyReflectiveFeign#0" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/cat-auth-service/auth-service/src/main/java/com/answer/test/aspect/CatMsgIdAspectBean.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="53">
-          <caret line="85" column="72" selection-start-line="85" selection-start-column="72" selection-end-line="85" selection-end-column="72" />
+        <state relative-caret-position="-8">
+          <caret line="86" column="29" selection-start-line="86" selection-start-column="19" selection-end-line="86" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cat-auth-service/auth-service/src/main/java/com/answer/test/config/CatFilterConfigure.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="14" column="42" selection-start-line="14" selection-start-column="42" selection-end-line="14" selection-end-column="42" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cat-admin-service/admin-service/src/main/java/com/answer/test/config/CatFilterConfigure.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common-model/src/main/java/com/answer/test/request/CatFilterConfigure.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-8">
+          <caret line="13" column="39" selection-start-line="13" selection-start-column="39" selection-end-line="13" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/dianping/cat/cat-client/3.0.0/cat-client-3.0.0-sources.jar!/com/dianping/cat/Cat.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-8">
+          <caret line="294" column="23" selection-start-line="294" selection-start-column="23" selection-end-line="294" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#10885#10886#0" expanded="true" />
+            <element signature="e#10927#10928#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cat-auth-service/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-8">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cat-auth-service/auth-service/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-8">
+          <caret line="33" column="8" selection-start-line="33" selection-start-column="8" selection-end-line="37" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cat-admin-service/admin-service/src/main/java/com/answer/test/service/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="157">
+          <caret line="51" column="32" selection-start-line="51" selection-start-column="32" selection-end-line="51" selection-end-column="32" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1438,6 +1409,17 @@
         </settings>
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ScopeChooserConfigurable.UI">
         <settings>
           <splitter-proportions>
             <option name="proportions">

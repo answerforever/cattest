@@ -63,18 +63,18 @@ public class CatMsgIdAspectBean {
             currentCatContext = new MyCatContext();
 
             header.setMyCatContext(currentCatContext);
-            Cat.logRemoteCallClient(currentCatContext);
-            traceId = currentCatContext.getProperty(Cat.Context.ROOT);
-
-            LOGGER.info("当前TraceId："+traceId);
+//            Cat.logRemoteCallClient(currentCatContext);
+//            traceId = currentCatContext.getProperty(Cat.Context.ROOT);
+//
+//            LOGGER.info("当前TraceId："+traceId);
 
         } else {
-            //Cat.logRemoteCallServer(currentCatContext);
+            Cat.logRemoteCallServer(currentCatContext);
         }
 
         //Header存入ThreadLocal
         RequestHeaderContext.setHeaderContext(request.getHeader());
-
+        traceId = currentCatContext.getProperty(Cat.Context.ROOT);
 //        String xAppId = "";
 //        String xTraceId = ;
 //        if (request.getHeader() != null && request.getHeader().getxAppId() != null) {
