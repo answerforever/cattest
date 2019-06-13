@@ -21,16 +21,13 @@ public class CatMsgIdAspectBean {
     private static Logger LOGGER = LoggerFactory.getLogger(CatMsgIdAspectBean.class);
 
     /**
-     * 定义拦截规则：拦截com.xjj.web.controller包下面的所有类中，有@RequestMapping注解的方法。
+     * 定义拦截规则：拦截com.answer.test包下面的所有类中，有@RequestMapping注解的方法。
      */
     @Pointcut("execution(* com.answer.test..*(..)) && @annotation(org.springframework.web.bind.annotation.PostMapping)")
     public void controllerMethodPointcut(){};
 
-    // && (@annotation(restMethod))
-    //@Around(value = "execution(* com.answer.test..*(..))")
     @Around("controllerMethodPointcut()")
     public Object around(ProceedingJoinPoint pjp) throws Throwable {
-//        createMessageTree();
         Request request = null;
         Request.Header header = null;
 

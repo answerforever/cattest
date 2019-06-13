@@ -52,7 +52,8 @@ public class UserController implements UserService {
             frontUser.setId(id);
         } catch (Exception ex) {
             LOGGER.error("check出现错误", ex);
-            Cat.logEvent("SERVICE_ERROR","check出现错误");
+            //Cat.logError(ex);
+            //Cat.logEvent("SERVICE_ERROR","check出现错误");
         }
         Response<Integer> response=new Response<>();
         response.setData(result);

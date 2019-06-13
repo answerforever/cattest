@@ -22,59 +22,47 @@ import java.util.UUID;
 @EnableAspectJAutoProxy
 @Configuration
 public class CatMsgIdAspectBean {
-
     private static Logger LOGGER = LoggerFactory.getLogger(CatMsgIdAspectBean.class);
 
     /**
-     * 定义拦截规则：拦截com.xjj.web.controller包下面的所有类中，有@RequestMapping注解的方法。
+     * 定义拦截规则：拦截com.answer.test包下面的所有类中，有@PostMapping注解的方法。
      */
     @Pointcut("execution(* com.answer.test..*(..)) && @annotation(org.springframework.web.bind.annotation.PostMapping)")
     public void controllerMethodPointcut(){};
 
-    // && (@annotation(restMethod))
-    //@Around(value = "execution(* com.answer.test..*(..))")
     @Around("controllerMethodPointcut()")
     public Response around(ProceedingJoinPoint pjp) throws Throwable {
-//        createMessageTree();
-
-        Request request=null;
-        Request.Header header=null;
-        Response response=null;
+        Request request = null;
+        Request.Header header = null;
+        Response response = null;
         Object[] args = pjp.getArgs();
-        request=(Request) args[0];
+        request = (Request) args[0];
 
-        if(request==null)
-        {
+        if (request == null) {
             //参数为null，抛出异常
-
         }
 
-        header=request.getHeader();
-        if(header==null)
-        {
+        header = request.getHeader();
+        if (header == null) {
             //header为null,抛出异常
-
         }
 
-        String traceId="";
+        String traceId = "";
         //Cat context
         MyCatContext currentCatContext = header.getMyCatContext();
         if (currentCatContext == null) {
             currentCatContext = new MyCatContext();
-
             header.setMyCatContext(currentCatContext);
 //            Cat.logRemoteCallClient(currentCatContext);
 //            traceId = currentCatContext.getProperty(Cat.Context.ROOT);
 //
 //            LOGGER.info("当前TraceId："+traceId);
-
         } else {
             Cat.logRemoteCallServer(currentCatContext);
         }
 
         //Header存入ThreadLocal
         RequestHeaderContext.setHeaderContext(request.getHeader());
-        traceId = currentCatContext.getProperty(Cat.Context.ROOT);
 //        String xAppId = "";
 //        String xTraceId = ;
 //        if (request.getHeader() != null && request.getHeader().getxAppId() != null) {
@@ -100,11 +88,6 @@ public class CatMsgIdAspectBean {
 //        requestAttributes.setAttribute(Cat.Context.ROOT, context.getProperty(Cat.Context.ROOT), 0);
 //        requestAttributes.setAttribute(Cat.Context.CHILD, context.getProperty(Cat.Context.CHILD), 0);
 //        requestAttributes.setAttribute(CatMsgConstants.APPLICATION_KEY, Cat.getManager().getDomain(), 0);
-    }
-
-    private String getTraceId()
-    {
-        return applicationName+"-"+UUID.randomUUID().toString().replace("-","");
     }
 
     @Value("${spring.application.name}")

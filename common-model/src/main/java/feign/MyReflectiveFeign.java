@@ -134,38 +134,14 @@ public class MyReflectiveFeign extends Feign {
 //                Loggers.Service3RD.info(url, "consumer", String.valueOf(elapsedTime)
 //                        , result, args, response, exp);
 
-                String msg = this.getExceptionMsg(url, method.getDeclaringClass().getName(), method.getName(), (Response)response);
+                String msg = this.getExceptionMsg(url, method.getDeclaringClass().getName(), method.getName(), (Response) response);
 
                 if (exp == null && response == null) {
                     //rpcException = new RpcException(msg, url, method.getDeclaringClass().getName(), method.getName(), (Response)response);
                 }
-
-//                if (response instanceof com.yqn.model.Response
-//                        && ((Response)response).getCode() <= Response.getErrorCode()
-//                        && ((Response)response).getCode() != Result.getSuccessCode()) {
-//                    if (CodeEnum.APPLICATION_ERROR.getCode().equals(((Response)response).getMsgCode())) {
-//                        msg = ((Response)response).getMsg();
-//                        rpcException = new RpcException(msg);
-//                    } else {
-//                        rpcException = new RpcException(msg, url, method.getDeclaringClass().getName(), method.getName(), (Response)response);
-//                    }
-//                }
-
-                //cat
-//                if (rpcException != null) {
-//                    Cat.logEvent(YqnCatType.SERVICE_MSG.getCode(), msg);
-//                    t.setStatus(rpcException);
-//                } else {
-//                    t.setStatus(Transaction.SUCCESS);
-//                }
                 t.setStatus(Transaction.SUCCESS);
                 t.complete();
             }
-
-//            if (rpcException != null) {
-//                throw rpcException;
-//            }
-
             return response;
         }
 
